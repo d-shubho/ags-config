@@ -1,0 +1,144 @@
+$alpha: 0.6;
+
+.bar {
+  font-family: "VictorMono Nerd Font";
+  background-color: rgba($bg, $alpha);
+
+  .center,
+  .right {
+    margin: 4px;
+    background-color: $bg;
+    border-radius: 8px;
+
+    button {
+      background-color: $bg;
+      padding: 10px;
+    }
+  }
+
+  .left {
+    margin: 4px;
+    border-radius: 8px;
+
+    button {
+      &:hover {
+        color: $bg;
+        background-color: $color12;
+      }
+    }
+
+    >* {
+      padding: 10px;
+      background-color: $bg;
+    }
+
+    .launcher {
+      border-radius: 8px;
+      margin-right: 2px;
+
+      .launcher_label {
+        padding: 0px 5px 0px 0px;
+      }
+    }
+
+    .clock {
+      margin-right: 2px;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .client_title {
+      border-radius: 8px;
+    }
+  }
+
+  .center {
+    .workspaces .workspace {
+      margin: 5px 8px;
+      padding: 5px 10px 5px 5px;
+      border-radius: 20px;
+
+      &:hover {
+        color: $bg;
+        background-color: $color12;
+      }
+
+
+    }
+
+    .workspaces .occupied {
+      background-color: $bg-alt;
+    }
+
+    .workspaces .active {
+      color: $bg;
+      background-color: $color4;
+    }
+
+  }
+
+  .right {
+
+    button {
+      &:hover {
+        color: $bg;
+        background-color: $color12;
+      }
+    }
+
+    .control_center {
+
+      margin: 0 0 0 5px;
+
+      .control_center_label {
+        padding: 0px 4px 0px 0px;
+      }
+    }
+
+    .bluetooth {
+      color: $color8;
+    }
+
+    .network {
+      color: $color10;
+    }
+
+    .audio {
+      color: $color3;
+
+      .muted_label {
+        color: $color1;
+      }
+
+      &:hover {
+        .muted_label {
+          color: $bg;
+        }
+      }
+    }
+
+    .battery {
+      color: $color11;
+
+      .battery_warning {
+        color: $color5;
+      }
+
+      .battery_critical {
+        color: $color1;
+      }
+
+      .battery_charging {
+        color: $color4;
+      }
+
+      &:hover {
+        .battery_label {
+          color: $bg;
+        }
+      }
+    }
+
+  }
+
+}
