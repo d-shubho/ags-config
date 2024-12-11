@@ -1,6 +1,6 @@
-$alpha: 0.6;
+$alpha: 0.7;
 
-.bar {
+.Bar {
   font-family: "VictorMono Nerd Font";
   background-color: rgba($bg, $alpha);
 
@@ -70,7 +70,7 @@ $alpha: 0.6;
       background-color: $bg-alt;
     }
 
-    .workspaces .active {
+    .workspaces .focused {
       color: $bg;
       background-color: $color4;
     }
@@ -86,21 +86,54 @@ $alpha: 0.6;
       }
     }
 
-    .control_center {
+    .quick_settings {
 
       margin: 0 0 0 5px;
 
-      .control_center_label {
+      .quick_settings_label {
         padding: 0px 4px 0px 0px;
       }
     }
 
     .bluetooth {
-      color: $color8;
+      .bluetooth_icon {
+        color: $color8;
+        margin-left: 4px;
+        margin-left: 4px;
+      }
+
+      .bluetooth_label {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+
+      &:hover {
+        .bluetooth_label, .bluetooth_icon {
+          color: $bg;
+          background: $color12;
+        }
+      }
+
     }
 
     .network {
-      color: $color10;
+      .network_icon {
+        color: $color10;
+        margin-left: 4px;
+        margin-left: 4px;
+      }
+
+      .network_label {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+
+      &:hover {
+        .network_icon {
+          color: $bg;
+          background: $color12;
+        }
+      }
     }
 
     .audio {
